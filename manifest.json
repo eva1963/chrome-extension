@@ -1,27 +1,26 @@
 {
-    "name": "Getting Started Example",
+    "name": "Eva Extension",
     "version": "0.0.3",
     "description": "Build an Extension!",
-    "permissions": ["storage"],
+    "permissions": ["storage", "activeTab", "scripting"],
     "manifest_version": 3,
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": "popup.png"
+    "background": {
+      "service_worker": "background.js"
     },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "/images/fiat-fe-tool.png",
-        "32": "/images/fiat-fe-tool.png",
-        "48": "/images/fiat-fe-tool.png",
-        "128": "/images/fiat-fe-tool.png"
+        "16": "/images/main.png",
+        "32": "/images/main.png",
+        "48": "/images/main.png",
+        "128": "/images/main.png"
       }
     },
     "icons": {
-      "16": "/images/fiat-fe-tool.png",
-      "32": "/images/fiat-fe-tool.png",
-      "48": "/images/fiat-fe-tool.png",
-      "128": "/images/fiat-fe-tool.png"
+      "16": "/images/main.png",
+      "32": "/images/main.png",
+      "48": "/images/main.png",
+      "128": "/images/main.png"
     },
     "options_page": "options.html"
   }
